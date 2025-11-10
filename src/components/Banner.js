@@ -3,13 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import 'animate.css';
 
-export const Banner = () => {
-  const toRotate = [
+const toRotate = [
     "Full Stack Developer",
     "ML Enthusiast",
     "Java & Node.js Developer"
   ];
-
+export const Banner = () => {
+  
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -39,7 +39,7 @@ export const Banner = () => {
 
     return () => clearTimeout(timer);
 
-  }, [text, isDeleting, loopNum, toRotate]);
+  }, [text, isDeleting, loopNum]);
 
   return (
     <section className="banner" id="home">
