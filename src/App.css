@@ -432,24 +432,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-txtx {
   position: absolute;
-  text-align: center;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
+  width: 90%;
+  text-align: center;
   opacity: 0;
-  width: 100%;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+
+.proj-txtx p {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: #fff;
+  margin: 0;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+
+
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
+  margin-bottom: 8px;
 }
+
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
@@ -464,6 +481,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.proj-txtx p strong, 
+.proj-txtx p b {
+  font-weight: 700;
+  color: #fff;
+}
+
 
 /************ Projects Css ************/
 .contact {
@@ -666,3 +689,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #ffffff;
   transform: scale(1.03);
 }
+.tech-label {
+  font-weight: 700 !important; /* FORCE bold */
+  font-size: 15px;
+  color: #ffffff;
+}
+
